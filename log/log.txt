@@ -1,0 +1,788 @@
+[2020-04-29 15:56:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 15:56:17] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_normal
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"123456"}
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>登录成功</h1>
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>登录成功</h1>
+[2020-04-29 15:56:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 15:56:17] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_wrong
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"1234567"}
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-29 15:56:17] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-29 16:07:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 16:07:19] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_normal
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"123456"}
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>登录成功</h1>
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>登录成功</h1>
+[2020-04-29 16:07:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 16:07:19] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_wrong
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"1234567"}
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-29 16:07:19] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-29 16:36:32] DEBUG [query_db: db.py, 21] select * from user where name ='范冰冰'
+[2020-04-29 16:36:32] DEBUG [query_db: db.py, 25] ()
+[2020-04-29 16:36:32] DEBUG [check_user: db.py, 49] ()
+[2020-04-29 16:36:32] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 16:36:32] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 27
+[2020-04-29 16:36:32] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_reg_normal
+[2020-04-29 16:36:32] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-29 16:36:32] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "范冰冰", "password": "123456"}
+[2020-04-29 16:36:32] INFO [log_case_info: case_log.py, 12] 期望结果:{'code': '100000', 'msg': '成功', 'data': {'name': '范冰冰', 'password': 'e10adc3949ba59abbe56e057f20f883e'}}
+[2020-04-29 16:36:32] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>请求数据为空</h1>
+[2020-04-29 16:40:48] DEBUG [query_db: db.py, 21] select * from user where name ='范冰冰'
+[2020-04-29 16:40:48] DEBUG [query_db: db.py, 25] ()
+[2020-04-29 16:40:48] DEBUG [check_user: db.py, 49] ()
+[2020-04-29 16:40:48] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 16:40:49] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 500 291
+[2020-04-29 16:40:49] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_reg_normal
+[2020-04-29 16:40:49] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/reg/
+[2020-04-29 16:40:49] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "范冰冰", "password": "123456"}
+[2020-04-29 16:40:49] INFO [log_case_info: case_log.py, 12] 期望结果:{'code': '100000', 'msg': '成功', 'data': {'name': '范冰冰', 'password': 'e10adc3949ba59abbe56e057f20f883e'}}
+[2020-04-29 16:40:49] INFO [log_case_info: case_log.py, 13] 实际结果:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
+
+[2020-04-29 17:50:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 17:50:31] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_normal
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"123456"}
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>登录成功</h1>
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>登录成功</h1>
+[2020-04-29 17:50:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-29 17:50:31] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_wrong
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"1234567"}
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-29 17:50:31] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-30 10:13:46] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-30 10:13:46] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_normal
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"123456"}
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>登录成功</h1>
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>登录成功</h1>
+[2020-04-30 10:13:46] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-30 10:13:46] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 9] 测试用例:test_user_login_wrong
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 10] url:http://115.28.108.130:5000/api/user/login/
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 11] 请求参数:{"name": "张三","password":"1234567"}
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 12] 期望结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-30 10:13:46] INFO [log_case_info: case_log.py, 13] 实际结果:<h1>失败，用户名或密码错误</h1>
+[2020-04-30 16:06:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:06:55] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 16:06:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:06:55] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 16:06:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:06:55] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 16:08:48] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:08:48] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 16:08:48] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:08:49] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 16:08:49] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:08:49] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 16:08:49] ERROR [setUpClass: test_user_login.py, 17] token获取错误
+[2020-04-30 16:09:14] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:09:14] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-04-30 16:10:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:10:16] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 16:10:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:10:16] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 16:10:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:10:16] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 16:10:16] ERROR [setUpClass: test_user_login.py, 17] token获取错误
+[2020-04-30 16:10:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:13:23] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=test2.txt&fileSize=0&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-04-30 16:13:23] ERROR [test_fileupload: test_user_login.py, 33] 调接口报错
+[2020-04-30 16:39:01] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:39:01] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 16:39:01] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:39:01] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 16:39:01] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:39:01] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 16:39:01] ERROR [setUpClass: test_user_login.py, 17] token获取错误
+[2020-04-30 16:39:01] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:42:06] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=test2.txt&fileSize=0&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-04-30 16:42:06] ERROR [test_fileupload: test_user_login.py, 33] 调接口报错
+[2020-04-30 16:48:49] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:48:49] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 16:48:49] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:48:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 16:48:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:48:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 16:48:50] ERROR [setUpClass: test_user_login.py, 17] token获取错误
+[2020-04-30 16:51:42] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:51:42] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 88
+[2020-04-30 16:54:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:54:10] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 16:54:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:54:10] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 16:54:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 16:54:10] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 16:54:10] ERROR [setUpClass: test_user_login.py, 17] token获取错误
+[2020-04-30 17:13:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:13:19] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 17:13:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:13:19] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 17:13:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:13:19] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 17:13:19] ERROR [setUpClass: test_user_login.py, 17] token获取错误
+[2020-04-30 17:18:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:18:25] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 17:18:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:18:25] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 17:18:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:18:25] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 17:18:25] INFO [setUpClass: test_user_login.py, 17] ec7d87e01008a6214b68b29d7033b3281ae21cd1b19e0f151c3baf9da89085095de1b6b1350fc1a0ca95102060be81059086f2a15c663c04fdac3a7638aa2edb
+[2020-04-30 17:31:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:31:35] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 17:31:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:31:35] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 17:31:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:31:35] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 17:31:35] INFO [setUpClass: test_user_login.py, 17] cc051d0b70e0aed01731f02d8bc03776fcf6a97c87bd9f2f7c562fb0c31f752b3e2040e30af36455842d8d06105857f80895c3960fad89e09b5ab35ebdb60f64
+[2020-04-30 17:32:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:32:19] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-04-30 17:33:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:33:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-04-30 17:33:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:33:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-04-30 17:33:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-04-30 17:33:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-04-30 17:33:50] INFO [setUpClass: test_user_login.py, 17] cc051d0b70e0aed01731f02d8bc03776e4530758f7e1a0003a333382a4e52021d399f766e7c8096bf60e3fedc9b6887e9ff3a71b52539659b3553c6ca0db4524
+[2020-05-06 09:51:44] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:51:44] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 09:51:44] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:51:44] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 09:51:44] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:51:44] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 09:51:44] INFO [setUpClass: test_user_login.py, 17] b709fd062e5d57bd272c017108ab3fcc210e33471d687aa7b2c7a135547a156e4d05c796b82031a9d26237ff11a26cac89f5f8dd84c95c1237f5bc8b14fde7f9
+[2020-05-06 09:54:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:54:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 09:54:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:54:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 09:54:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:54:50] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 09:54:50] INFO [setUpClass: test_user_login.py, 17] f131eb39fcdacab0a605997223e0c406b1eec18d8231619db7e77a5f459651d20e72bb295f8264be0bd040ce91f2def1cd9c6fdee770f605e904efa857d42e04
+[2020-05-06 09:55:18] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:55:18] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 09:55:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 09:55:33] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 10:05:47] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:05:47] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 10:05:48] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:05:48] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 10:05:48] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:05:48] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 10:05:48] INFO [setUpClass: test_user_login.py, 17] f131eb39fcdacab0a605997223e0c40687d7ea262c290c7fd7ffb7b51356b97a536f6bcb9fa829ded31141627bb1dd25920332368c4ad46f05e7b59f302540ae
+[2020-05-06 10:06:49] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:06:49] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 10:06:49] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:06:49] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 10:06:49] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:06:49] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 10:06:49] INFO [setUpClass: test_user_login.py, 17] f131eb39fcdacab0a605997223e0c406b3b0ed45360565b4b09b383857fe997efafa7560060dcbe1d1d7c62a1e21d9eb9c84b2f8b8e4d29ad2c08058fb7334fe
+[2020-05-06 10:07:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:07:31] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 10:08:51] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:08:51] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 10:08:51] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:08:51] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 10:08:51] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:08:51] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 10:08:51] INFO [setUpClass: test_user_login.py, 17] f131eb39fcdacab0a605997223e0c406ab6c1b3014e23d09a263f1c693d10e01467b11fa385f4d52901ec2ea1defe239292540cf8b52f40d5a5862f642c94d02
+[2020-05-06 10:08:52] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:08:52] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 10:09:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:09:06] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 10:26:09] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:26:09] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 10:26:09] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:26:09] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 10:26:09] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:26:09] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 10:26:09] INFO [setUpClass: test_user_login.py, 17] 291dd40d4c8a4d233efa19e73e8514170a0a73eb4a7a257a813c722e69d1f3d1c81598bc1a786a7ffc97eefbe26aa741853ad1494ece63c1f721b5e2c6ba087a
+[2020-05-06 10:32:56] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:32:57] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 10:46:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:46:25] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 10:48:46] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 10:48:46] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 65
+[2020-05-06 10:49:12] INFO [setUpClass: test_user_login.py, 17] 9e015d201dd0eeb9270dc9d5341bb2b59cc78b0c1ca68ddabae18e21c32510e4064d783e877590788154c90865a1af20cf179ad552194bf16e11649ae0ea310c
+[2020-05-06 11:01:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:01:59] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 11:02:03] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:02:03] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 11:02:07] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:02:07] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 11:02:11] INFO [setUpClass: test_user_login.py, 17] 14c8751429754a6246772992a4f88f49421e5ccd6892481fe07dabf6b1cd26a1d871f6dd4f39c97d6b11c852d2243dac98437c22a3744c63fe3a567d68de3ade
+[2020-05-06 11:04:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:04:10] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 11:04:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:04:10] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 11:04:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:04:11] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 11:04:11] INFO [setUpClass: test_user_login.py, 17] 14c8751429754a6246772992a4f88f49814039e4c7dc40478254301a2ff700fc785943b35bf0e2e4cc6e8e97d9795696c9c9fa64d454c418c32c375fbbfbe4fa
+[2020-05-06 11:04:49] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:04:49] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 11:05:08] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:05:09] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 11:05:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:05:17] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 88
+[2020-05-06 11:05:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:05:26] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 88
+[2020-05-06 11:07:54] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:07:54] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 88
+[2020-05-06 11:14:15] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:14:15] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 88
+[2020-05-06 11:28:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:28:55] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 88
+[2020-05-06 11:32:07] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:32:08] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 11:32:40] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:32:41] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 11:32:45] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 11:32:45] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 11:32:48] INFO [setUpClass: test_user_login.py, 17] bfea1eb09270586e75a6421a3fbb620a59d11cd3ece080803ed1e26d13c87850dce5945c5c6a7abbb577fd47367fcd31aa69b950dd9d3f9c4c3677100f6ea246
+[2020-05-06 13:38:43] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:38:43] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 13:38:43] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:38:43] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 13:38:43] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:38:43] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 13:38:43] INFO [setUpClass: test_user_login.py, 17] f2000c54efa89fa0f7ecfb2df46d464f8da057e2c4f1caa2fee709bb71e5846f1b155c840b6321ff533c732c8af889ab8aed5325c8afd230574ace0f9709b632
+[2020-05-06 13:41:14] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:41:14] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 13:41:27] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:41:27] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 13:41:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:41:31] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 13:41:32] INFO [setUpClass: test_user_login.py, 17] f2000c54efa89fa0f7ecfb2df46d464fee627489d3bca68fd6b8bd56febf25d8fe12771ae5d6fcf28009b4c678162f7bb324ebe1b0370e1005ecca69a4edd16f
+[2020-05-06 13:46:08] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:46:08] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 13:46:11] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:46:11] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 13:46:14] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:46:14] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 13:46:14] INFO [setUpClass: test_user_login.py, 17] f2000c54efa89fa0f7ecfb2df46d464fa57f3c247f607de17d5db30bda7771faf398c6f716d035204bf9eb9f190e5d8ecabd030cc0a030ecc0d4ab3e3f47f63c
+[2020-05-06 13:49:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:49:17] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 13:49:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:49:17] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 13:49:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:49:17] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 13:49:17] INFO [setUpClass: test_user_login.py, 17] adffb002111700afa54967a3b91b27a41310ca1fc6e9fc0e1ec44283b5cc0526e1db4281b1823eddaee3a17cbca713ea8288e3b14c257fe6a4f4f9d831271822
+[2020-05-06 13:49:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:52:43] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=test2.txt&fileSize=0&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-06 13:54:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:54:31] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 13:54:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:54:31] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 13:54:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:54:32] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 13:54:32] INFO [setUpClass: test_user_login.py, 17] adffb002111700afa54967a3b91b27a419a8c63c3faf07dffbd3434191cfe9df9a57e86d62636b4b9584b19313e691922defaf94642069d531cdee15696ed81a
+[2020-05-06 13:56:18] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:56:18] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 13:56:18] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:56:18] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 13:56:18] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:56:18] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 13:56:18] INFO [setUpClass: test_user_login.py, 17] adffb002111700afa54967a3b91b27a457e79fb0bc8ae020dd18f14390639bd9cbbe8998a4e8c30f3e5a7dd1c0276b5888fbdad6bcba891689e10a79dc921b84
+[2020-05-06 13:56:41] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 13:56:41] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 16:42:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 16:42:51] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 16:42:51] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 16:42:51] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 16:42:51] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 16:42:51] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 16:42:51] INFO [setUpClass: fileupload.py, 17] a19157a14c751a5f9f3120aed323b57b0a0039838d8bd487ff948c5f073d97ae2d442401099538426c8cc7ca6ae8308b301eb3a7e5b8bae4a10c036789d07f6f
+[2020-05-06 16:43:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 16:43:33] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 17:31:44] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:31:45] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 17:31:45] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:31:45] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 17:31:45] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:31:45] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 17:31:45] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:31:45] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-06 17:34:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:34:36] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 88
+[2020-05-06 17:35:14] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:35:14] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 17:35:14] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:35:14] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 17:35:14] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 17:35:14] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 17:35:14] INFO [setUpClass: fileupload.py, 17] None
+[2020-05-06 18:01:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 18:01:25] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 18:01:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 18:01:25] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 18:01:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 18:01:25] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 18:01:25] INFO [setUpClass: fileupload.py, 17] None
+[2020-05-06 18:06:11] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 18:06:12] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-06 18:06:12] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 18:06:12] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-06 18:06:12] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-06 18:06:12] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-06 18:06:12] INFO [setUpClass: fileupload.py, 17] None
+[2020-05-07 09:50:28] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:50:29] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 09:50:29] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:50:29] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 09:50:29] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:50:29] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 09:50:29] INFO [setUpClass: fileupload.py, 17] e787075d5bc34644f1b93d08b0384180f4dd0a4799f95e67790979cc91f42f3364b32b31b63faf05e08503713bd9a2b290f92613d067f4ddc60511b814a301d9
+[2020-05-07 09:51:42] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:51:42] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 09:51:42] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:51:42] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 09:51:42] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:51:42] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 09:51:42] INFO [setUpClass: fileupload.py, 17] e787075d5bc34644f1b93d08b0384180a0d8182fa460dfaf3a28788616e35f963563c068cc065c73cc30596b5d2fa3dcc0b70d4b9c08f541510c91973c3796a1
+[2020-05-07 09:52:11] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:52:11] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 109
+[2020-05-07 09:54:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:54:06] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 09:54:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:54:06] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 09:54:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:54:07] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 09:54:07] INFO [setUpClass: fileupload.py, 17] e787075d5bc34644f1b93d08b0384180c5579bdc886ac0cfa6621b69e52fad0963d469e9713e51d537f2c98493f65909eaa24e7761755b7bba1e8abe358bbc4b
+[2020-05-07 09:54:07] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:54:08] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=test2.txt&fileSize=0&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 09:58:28] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:58:28] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 09:58:28] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:58:28] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 09:58:28] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:58:28] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 09:58:28] INFO [setUpClass: fileupload.py, 17] e787075d5bc34644f1b93d08b0384180616b2682f46c44d0b85ad93588ff778dbce93e376a3e75cffe035589dc82c0a077f14ec07e3e700f877bd72d63c1c392
+[2020-05-07 09:58:28] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 09:58:29] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=test2.txt&fileSize=0&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 10:01:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:01:55] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 10:01:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:01:55] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 10:01:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:01:55] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 10:01:55] INFO [setUpClass: fileupload.py, 17] e787075d5bc34644f1b93d08b03841807a86fc720362e323f369d69c6d8fe8e660b75a69984ccf559370ea2f2de6eb3e77c6f3905c5f7b9443cbc237373d4396
+[2020-05-07 10:01:55] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:01:56] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=test2.txt&fileSize=0&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 10:07:09] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:07:09] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 10:07:09] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:07:09] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 10:07:09] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:07:09] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 10:07:09] INFO [setUpClass: fileupload.py, 17] a7c40cb75391fd17fb47c877c5bf38293430ec2681a798e34bfb29063f5cb2caf4aded274cd5a1ca800cc2b75b167090654ff27b96834fc7e2e21c73d282b823
+[2020-05-07 10:07:09] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:07:11] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=test2.txt&fileSize=0&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 10:21:56] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:21:56] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 10:21:56] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:21:56] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 10:21:56] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:21:56] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 10:21:56] INFO [setUpClass: fileupload.py, 17] 864db6627696433d6f11f2834cdd590b9bde80291c2400f711b57d05de334f9c205eb3e0fdbdceeca7332ebd68d28a36072368e1e66a658cc7b4977d4e28fb61
+[2020-05-07 10:21:56] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:21:57] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 10:26:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:26:06] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 10:26:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:26:06] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 10:26:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:26:06] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 10:26:06] INFO [setUpClass: fileupload.py, 17] 864db6627696433d6f11f2834cdd590bda41094eb9d131500a3ead1838fb23fb588d9e3d7f88aa18f6a8f17de0f16ab294a40450c02d99d511e9a2bf2b334d10
+[2020-05-07 10:26:06] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 10:26:07] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 11:02:32] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 11:02:32] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/login HTTP/1.1" 200 204
+[2020-05-07 11:02:32] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 11:02:32] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-07 11:02:32] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 11:02:32] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.130:8030/login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-07 11:02:32] INFO [setUpClass: fileupload.py, 17] 745ca30dc4a08a96482efb3f12148d4236d4355a8bbfbb768ff230eecef2075da6082259d8a5949f02b3da24bc8f60794a66ec1e19e6ed5819ff62dcfd16d5af
+[2020-05-07 11:02:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 127.0.0.1:8888
+[2020-05-07 11:02:34] DEBUG [_make_request: connectionpool.py, 437] http://127.0.0.1:8888 "POST http://172.17.39.19:8030/system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 15:28:29] INFO [setUpClass: fileupload.py, 15] a1edc7d89ceaf02b321711dcc3c3f552eec2a9227c26cbcb02610fd0af959efb9b6d0989c260599488f79841080b2a600bb76aa4c118a075429b06306815cfa7
+[2020-05-07 15:29:05] INFO [setUpClass: fileupload.py, 16] a1edc7d89ceaf02b321711dcc3c3f552eec2a9227c26cbcb02610fd0af959efb9b6d0989c260599488f79841080b2a600bb76aa4c118a075429b06306815cfa7
+[2020-05-07 15:29:24] INFO [setUpClass: fileupload.py, 17] a1edc7d89ceaf02b321711dcc3c3f552eec2a9227c26cbcb02610fd0af959efb9b6d0989c260599488f79841080b2a600bb76aa4c118a075429b06306815cfa7
+[2020-05-07 15:29:24] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 15:29:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 15:43:36] INFO [setUpClass: fileupload.py, 17] a1edc7d89ceaf02b321711dcc3c3f552eec2a9227c26cbcb02610fd0af959efb9b6d0989c260599488f79841080b2a600bb76aa4c118a075429b06306815cfa7
+[2020-05-07 15:43:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 15:43:37] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 15:49:11] INFO [setUpClass: fileupload.py, 17] a1edc7d89ceaf02b321711dcc3c3f552eec2a9227c26cbcb02610fd0af959efb9b6d0989c260599488f79841080b2a600bb76aa4c118a075429b06306815cfa7
+[2020-05-07 15:49:11] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 15:49:12] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 17:15:49] INFO [setUpClass: fileupload.py, 17] a1edc7d89ceaf02b321711dcc3c3f552eec2a9227c26cbcb02610fd0af959efb9b6d0989c260599488f79841080b2a600bb76aa4c118a075429b06306815cfa7
+[2020-05-07 17:15:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 17:15:51] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-07 17:16:27] INFO [setUpClass: fileupload.py, 17] 55823d90aa492a3174cc78ae60532db9f1366fe71234238e442f1b5a5aaea3f9c158176c78d93052a788bf1c5612ce0a48d7664fc0ee3223fa32408b31a1574a
+[2020-05-07 17:16:27] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 17:16:29] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 17:31:16] INFO [setUpClass: fileupload.py, 17] 55823d90aa492a3174cc78ae60532db9f1366fe71234238e442f1b5a5aaea3f9c158176c78d93052a788bf1c5612ce0a48d7664fc0ee3223fa32408b31a1574a
+[2020-05-07 17:31:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 17:31:17] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 17:36:22] INFO [setUpClass: fileupload.py, 17] 55823d90aa492a3174cc78ae60532db9f1366fe71234238e442f1b5a5aaea3f9c158176c78d93052a788bf1c5612ce0a48d7664fc0ee3223fa32408b31a1574a
+[2020-05-07 17:36:22] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 17:36:24] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 17:40:37] INFO [setUpClass: fileupload.py, 17] b6dbd1028aef7348944c17cb5215561e3b1b20ea0b9d6fcba2a4c138c4738f1a5dffec6090d4a91e49b9fc675f928a890494f61929034eba81cdf6df24220dce
+[2020-05-07 17:40:37] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 17:40:38] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-07 17:57:59] INFO [setUpClass: crowd_save.py, 18] b6dbd1028aef7348944c17cb5215561e3b1b20ea0b9d6fcba2a4c138c4738f1a5dffec6090d4a91e49b9fc675f928a890494f61929034eba81cdf6df24220dce
+[2020-05-07 17:59:32] INFO [setUpClass: crowd_save.py, 18] b6dbd1028aef7348944c17cb5215561e3b1b20ea0b9d6fcba2a4c138c4738f1a5dffec6090d4a91e49b9fc675f928a890494f61929034eba81cdf6df24220dce
+[2020-05-07 17:59:32] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-07 17:59:32] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 09:17:08] INFO [setUpClass: fileupload.py, 17] 5efe138487139f089abead8c10120bbf17cf292f3c46d6d18493eb99a8a1cdcea64555e8b6ecce97c998ea20482538e1fe416c3a9cd29b63e28d03e957f29c6f
+[2020-05-08 09:17:08] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 09:17:09] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-08 09:17:33] INFO [setUpClass: crowd_save.py, 18] 5efe138487139f089abead8c10120bbf17cf292f3c46d6d18493eb99a8a1cdcea64555e8b6ecce97c998ea20482538e1fe416c3a9cd29b63e28d03e957f29c6f
+[2020-05-08 09:17:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 09:17:34] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 10:27:06] INFO [setUpClass: crowd_save.py, 18] 5efe138487139f089abead8c10120bbf17cf292f3c46d6d18493eb99a8a1cdcea64555e8b6ecce97c998ea20482538e1fe416c3a9cd29b63e28d03e957f29c6f
+[2020-05-08 10:27:07] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:27:07] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 112
+[2020-05-08 10:27:42] INFO [setUpClass: fileupload.py, 17] 737bf6bdb3e92303b5f4984d8237e29143070407887999f8dca0edb5c732e6dd0544ec67ecb976b6819104b22d16c5d4575c1bdf0f8f3962843ecdbdca447a47
+[2020-05-08 10:27:42] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:27:44] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-08 10:27:53] INFO [setUpClass: crowd_save.py, 18] 737bf6bdb3e92303b5f4984d8237e29143070407887999f8dca0edb5c732e6dd0544ec67ecb976b6819104b22d16c5d4575c1bdf0f8f3962843ecdbdca447a47
+[2020-05-08 10:27:53] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:27:53] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 10:28:19] INFO [setUpClass: crowd_save.py, 18] 737bf6bdb3e92303b5f4984d8237e29143070407887999f8dca0edb5c732e6dd0544ec67ecb976b6819104b22d16c5d4575c1bdf0f8f3962843ecdbdca447a47
+[2020-05-08 10:28:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:28:19] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 10:29:24] INFO [setUpClass: crowd_save.py, 18] 737bf6bdb3e92303b5f4984d8237e29143070407887999f8dca0edb5c732e6dd0544ec67ecb976b6819104b22d16c5d4575c1bdf0f8f3962843ecdbdca447a47
+[2020-05-08 10:29:24] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:29:24] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 400 253
+[2020-05-08 10:43:57] INFO [setUpClass: crowd_save.py, 18] 737bf6bdb3e92303b5f4984d8237e29143070407887999f8dca0edb5c732e6dd0544ec67ecb976b6819104b22d16c5d4575c1bdf0f8f3962843ecdbdca447a47
+[2020-05-08 10:43:57] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:43:57] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 112
+[2020-05-08 10:58:53] INFO [setUpClass: fileupload.py, 17] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 10:58:54] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:58:55] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-08 10:59:22] INFO [setUpClass: crowd_save.py, 18] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 10:59:22] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 10:59:22] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 400 253
+[2020-05-08 11:01:22] INFO [setUpClass: crowd_save.py, 18] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 11:01:22] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 11:01:22] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 11:03:40] INFO [setUpClass: crowd_save.py, 18] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 11:03:40] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 11:03:40] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 11:12:31] INFO [setUpClass: crowd_save.py, 18] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 11:12:31] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 11:12:32] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 400 253
+[2020-05-08 11:17:04] INFO [setUpClass: crowd_save.py, 18] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 11:17:04] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 11:17:04] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 400 253
+[2020-05-08 11:17:39] INFO [setUpClass: crowd_save.py, 18] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 11:17:39] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 11:17:39] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 11:20:48] INFO [setUpClass: crowd_save.py, 18] 97c3190d10a31a233e0c1a5aa58df5a1c6536da56936aeb07bb960389a6f2b8c470170afdb48abf3216e3cb010c2bccacf55629e0bc2d0e7deeb6ffd4c427565
+[2020-05-08 11:20:48] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 11:20:48] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 400 253
+[2020-05-08 13:40:58] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 13:40:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 13:40:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 13:48:20] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 13:48:47] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 13:48:47] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 13:48:47] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 13:49:07] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 13:49:37] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 13:49:45] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 13:50:21] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 13:50:21] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 13:50:21] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 415 275
+[2020-05-08 14:00:47] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 14:00:47] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 14:00:48] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 14:39:07] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 14:39:07] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 14:39:07] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 400 253
+[2020-05-08 14:39:50] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 14:39:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 14:39:50] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 400 253
+[2020-05-08 14:40:08] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 14:40:19] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 14:40:19] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 14:41:17] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 14:41:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 14:41:17] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:03:04] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:03:04] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:03:05] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:03:20] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:03:20] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:03:20] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:04:21] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:04:21] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:04:22] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:04:38] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:04:38] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:04:39] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:10:17] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:10:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:10:17] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:10:35] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:10:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:10:35] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:10:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:10:35] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:12:41] INFO [setUpClass: crowd_save.py, 18] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:12:41] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:12:42] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:26:41] INFO [setUpClass: crowd_save.py, 20] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:26:41] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:26:42] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:26:42] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:26:42] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:49:10] INFO [setUpClass: crowd_save.py, 20] 9e41a4bc1e15a03776bd8d1598883f37f74009bf1f9061854844aa9dde0ac2714629286069d701ef80ef1a755818d0fa917ce39c21c40cc1c4a7ad5800ed714f
+[2020-05-08 15:49:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:49:10] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 112
+[2020-05-08 15:49:33] INFO [setUpClass: fileupload.py, 17] c9ee0bb0e957fe7476a5ea2a4e9e38e87c188c404727a9abc016639d2d312bc13db9a622c06f2bed515ef05b5949e78ea5d6878c3bde8f002181fc28b82c2250
+[2020-05-08 15:49:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:49:35] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-08 15:49:51] INFO [setUpClass: crowd_save.py, 20] c9ee0bb0e957fe7476a5ea2a4e9e38e87c188c404727a9abc016639d2d312bc13db9a622c06f2bed515ef05b5949e78ea5d6878c3bde8f002181fc28b82c2250
+[2020-05-08 15:49:51] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:49:51] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:50:12] INFO [setUpClass: crowd_save.py, 20] c9ee0bb0e957fe7476a5ea2a4e9e38e87c188c404727a9abc016639d2d312bc13db9a622c06f2bed515ef05b5949e78ea5d6878c3bde8f002181fc28b82c2250
+[2020-05-08 15:50:12] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:50:12] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:50:12] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:50:13] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:50:13] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:50:13] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:53:44] INFO [setUpClass: crowd_save.py, 20] c9ee0bb0e957fe7476a5ea2a4e9e38e87c188c404727a9abc016639d2d312bc13db9a622c06f2bed515ef05b5949e78ea5d6878c3bde8f002181fc28b82c2250
+[2020-05-08 15:53:44] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:53:44] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:54:15] INFO [setUpClass: crowd_save.py, 20] c9ee0bb0e957fe7476a5ea2a4e9e38e87c188c404727a9abc016639d2d312bc13db9a622c06f2bed515ef05b5949e78ea5d6878c3bde8f002181fc28b82c2250
+[2020-05-08 15:54:15] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:54:16] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:54:25] INFO [setUpClass: crowd_save.py, 20] c9ee0bb0e957fe7476a5ea2a4e9e38e87c188c404727a9abc016639d2d312bc13db9a622c06f2bed515ef05b5949e78ea5d6878c3bde8f002181fc28b82c2250
+[2020-05-08 15:54:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:54:25] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:54:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:54:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 15:54:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 15:54:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 16:50:07] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-08 16:50:08] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-08 16:50:08] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-08 16:50:08] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-08 16:50:08] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-08 16:50:08] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-08 16:54:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-08 16:54:35] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-08 16:54:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-08 16:54:35] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-08 16:54:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-08 16:54:35] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-08 16:54:35] INFO [setUpClass: fileupload.py, 17] 30ea4f4011ceb8cc715e00eb5680992df0673ee808f30d1f2a3ff98d94868f764d28e70bb32140148098f6a3ab2658f2cbc8617ab8ca7d75c9883decc737683f
+[2020-05-08 16:54:35] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 16:54:36] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-08 16:54:36] INFO [setUpClass: crowd_save.py, 20] 30ea4f4011ceb8cc715e00eb5680992df0673ee808f30d1f2a3ff98d94868f764d28e70bb32140148098f6a3ab2658f2cbc8617ab8ca7d75c9883decc737683f
+[2020-05-08 16:54:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 16:54:37] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 16:54:37] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 16:54:37] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-08 16:54:37] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-08 16:54:37] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-09 16:32:56] INFO [setUpClass: fileupload.py, 17] 30ea4f4011ceb8cc715e00eb5680992df0673ee808f30d1f2a3ff98d94868f764d28e70bb32140148098f6a3ab2658f2cbc8617ab8ca7d75c9883decc737683f
+[2020-05-09 16:32:56] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 180.167.180.242:12010
+[2020-05-09 16:32:57] DEBUG [_make_request: connectionpool.py, 437] http://180.167.180.242:12010 "POST /insight/system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-11 17:51:30] INFO [setUpClass: crowd_save.py, 20] 30ea4f4011ceb8cc715e00eb5680992df0673ee808f30d1f2a3ff98d94868f764d28e70bb32140148098f6a3ab2658f2cbc8617ab8ca7d75c9883decc737683f
+[2020-05-11 17:51:30] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-11 17:51:30] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 112
+[2020-05-11 17:54:28] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 180.167.180.242:12010
+[2020-05-11 17:54:28] DEBUG [_make_request: connectionpool.py, 437] http://180.167.180.242:12010 "POST /insight/system/crowd/save HTTP/1.1" 200 None
+[2020-05-11 17:54:43] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 180.167.180.242:12010
+[2020-05-11 17:54:43] DEBUG [_make_request: connectionpool.py, 437] http://180.167.180.242:12010 "POST /insight/system/crowd/save HTTP/1.1" 200 None
+[2020-05-11 17:54:43] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 180.167.180.242:12010
+[2020-05-11 17:54:43] DEBUG [_make_request: connectionpool.py, 437] http://180.167.180.242:12010 "POST /insight/system/crowd/save HTTP/1.1" 200 None
+[2020-05-11 17:54:43] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 180.167.180.242:12010
+[2020-05-11 17:54:43] DEBUG [_make_request: connectionpool.py, 437] http://180.167.180.242:12010 "POST /insight/system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 09:41:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 09:41:36] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-12 09:41:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 09:41:36] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-12 09:41:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 09:41:36] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-12 09:41:36] INFO [setUpClass: fileupload.py, 17] 6ba6e2d3b1a56b791eb4cfcf418872c5452d0c339a0d66a4a404e405eeecc3c48e97c94ad79cfe832cd4a6e0b5e4a65f91a502e2aaa9e9d7a5587440da080ac8
+[2020-05-12 09:41:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 180.167.180.242:12010
+[2020-05-12 09:41:36] DEBUG [_make_request: connectionpool.py, 437] http://180.167.180.242:12010 "POST /insight/system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-12 09:41:36] INFO [setUpClass: crowd_save.py, 20] 6ba6e2d3b1a56b791eb4cfcf418872c5452d0c339a0d66a4a404e405eeecc3c48e97c94ad79cfe832cd4a6e0b5e4a65f91a502e2aaa9e9d7a5587440da080ac8
+[2020-05-12 09:42:53] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 09:42:53] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-12 09:42:53] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 09:42:53] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-12 09:42:53] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 09:42:53] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-12 09:42:53] INFO [setUpClass: fileupload.py, 17] 6ba6e2d3b1a56b791eb4cfcf418872c59c3f2eb3b3e235d91e8b2896aef122cfc63d3f839f364475311366d04c8ccc74893818434c229dc0b15bfd8e05167941
+[2020-05-12 09:42:53] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 09:42:53] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-12 09:42:53] INFO [setUpClass: crowd_save.py, 20] 6ba6e2d3b1a56b791eb4cfcf418872c59c3f2eb3b3e235d91e8b2896aef122cfc63d3f839f364475311366d04c8ccc74893818434c229dc0b15bfd8e05167941
+[2020-05-12 09:43:58] INFO [setUpClass: fileupload.py, 17] 6ba6e2d3b1a56b791eb4cfcf418872c59c3f2eb3b3e235d91e8b2896aef122cfc63d3f839f364475311366d04c8ccc74893818434c229dc0b15bfd8e05167941
+[2020-05-12 09:43:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 09:43:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-12 09:47:50] INFO [setUpClass: fileupload.py, 17] 6ba6e2d3b1a56b791eb4cfcf418872c59c3f2eb3b3e235d91e8b2896aef122cfc63d3f839f364475311366d04c8ccc74893818434c229dc0b15bfd8e05167941
+[2020-05-12 09:47:50] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 09:47:51] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-12 09:48:22] INFO [setUpClass: fileupload.py, 17] 6ba6e2d3b1a56b791eb4cfcf418872c59c3f2eb3b3e235d91e8b2896aef122cfc63d3f839f364475311366d04c8ccc74893818434c229dc0b15bfd8e05167941
+[2020-05-12 09:48:22] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 09:48:23] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-12 16:53:33] INFO [setUpClass: fileupload.py, 17] 09abe2d0376609f437c44e408c36d4ece3336059f65f632db539e06dcab93b9c2fe2115ae112c7e4b1822972b59982123e62f9c9e11219fec4eb0b996b98c104
+[2020-05-12 16:53:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:53:33] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-12 16:53:58] INFO [setUpClass: fileupload.py, 17] 09abe2d0376609f437c44e408c36d4ece3336059f65f632db539e06dcab93b9c2fe2115ae112c7e4b1822972b59982123e62f9c9e11219fec4eb0b996b98c104
+[2020-05-12 16:53:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:53:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-12 16:55:11] INFO [setUpClass: fileupload.py, 18] 09abe2d0376609f437c44e408c36d4ece3336059f65f632db539e06dcab93b9c2fe2115ae112c7e4b1822972b59982123e62f9c9e11219fec4eb0b996b98c104
+[2020-05-12 16:55:11] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:55:11] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-12 16:56:20] INFO [setUpClass: fileupload.py, 18] 09abe2d0376609f437c44e408c36d4ece3336059f65f632db539e06dcab93b9c2fe2115ae112c7e4b1822972b59982123e62f9c9e11219fec4eb0b996b98c104
+[2020-05-12 16:56:20] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:56:20] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-12 16:56:59] INFO [setUpClass: crowd_save.py, 20] 09abe2d0376609f437c44e408c36d4ece3336059f65f632db539e06dcab93b9c2fe2115ae112c7e4b1822972b59982123e62f9c9e11219fec4eb0b996b98c104
+[2020-05-12 16:56:59] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:56:59] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 16:56:59] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:56:59] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 16:56:59] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:57:00] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 16:57:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 16:57:25] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-12 16:57:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 16:57:25] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-12 16:57:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 16:57:25] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-12 16:57:25] INFO [setUpClass: fileupload.py, 18] 09abe2d0376609f437c44e408c36d4ec1bd3e5ac6ed805e6bbb43c68876eefb4157ae5e2f7ba33d408e0e5ad7470593de84ae2b867f4ee0d68813c64a8779f35
+[2020-05-12 16:57:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:57:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-12 16:57:26] INFO [setUpClass: crowd_save.py, 20] 09abe2d0376609f437c44e408c36d4ec1bd3e5ac6ed805e6bbb43c68876eefb4157ae5e2f7ba33d408e0e5ad7470593de84ae2b867f4ee0d68813c64a8779f35
+[2020-05-12 16:57:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:57:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 16:57:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:57:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 16:57:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 16:57:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 17:00:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 17:00:25] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-12 17:00:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 17:00:25] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-12 17:00:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-12 17:00:25] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-12 17:00:25] INFO [setUpClass: fileupload.py, 18] 4fa050fefab4ed6e64e20c8880bc608d918fc583f5bcd5e671a2d8d648e77f3de9ab7d5168c5493161a4f7d2c2fde3a7b8bdaecf9137c528c4d89b83fe146ae7
+[2020-05-12 17:00:25] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 17:00:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-12 17:00:26] INFO [setUpClass: crowd_save.py, 20] 4fa050fefab4ed6e64e20c8880bc608d918fc583f5bcd5e671a2d8d648e77f3de9ab7d5168c5493161a4f7d2c2fde3a7b8bdaecf9137c528c4d89b83fe146ae7
+[2020-05-12 17:00:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 17:00:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 17:00:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 17:00:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-12 17:00:26] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-12 17:00:26] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-13 10:43:02] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 10:45:27] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 10:49:46] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 10:51:18] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 15:13:25] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 15:14:36] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 15:23:03] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:23:03] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-13 15:23:03] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:23:03] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-13 15:23:03] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:23:03] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-13 15:23:03] INFO [setUpClass: fileupload.py, 18] 21dc3e5607af9debdd2538381c9c6069bcc67827c3410c6128d2823de9d5feb8c48ce6e59eedc1193b4a81170f4a14696eaaf18c9fc781ccf9f7149ae15adcc5
+[2020-05-13 15:23:03] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:23:03] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-13 15:23:03] INFO [setUpClass: crowd_save.py, 20] 21dc3e5607af9debdd2538381c9c6069bcc67827c3410c6128d2823de9d5feb8c48ce6e59eedc1193b4a81170f4a14696eaaf18c9fc781ccf9f7149ae15adcc5
+[2020-05-13 15:23:03] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:23:03] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-13 15:23:03] INFO [log_case_info: case_log.py, 10] 测试用例:crowd_save_normal
+[2020-05-13 15:23:03] INFO [log_case_info: case_log.py, 11] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-13 15:23:03] INFO [log_case_info: case_log.py, 12] 请求参数:{"crowdId": "", "name": "测试64", "org": "20005", "business": "1", "bfileId": 1100000264, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-13 15:23:03] INFO [log_case_info: case_log.py, 13] 期望结果:请求成功
+[2020-05-13 15:23:03] INFO [log_case_info: case_log.py, 14] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-13 15:23:03] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:23:04] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 10] 测试用例:crowd_save_repeat
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 11] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 12] 请求参数:{"crowdId": "", "name": "测试59", "org": "20005", "business": "1", "bfileId": 1100000264, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 13] 期望结果:名称重复
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 14] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-13 15:23:04] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:23:04] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 10] 测试用例:crowd_save_repeat
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 11] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 12] 请求参数:{"crowdId": "", "name": "", "org": "20005", "business": "1", "bfileId": 1100000264, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 13] 期望结果:名称为空
+[2020-05-13 15:23:04] INFO [log_case_info: case_log.py, 14] 实际结果:{"res":0,"resMsg":"名称为空","obj":null}
+[2020-05-13 15:26:15] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 15:28:49] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 15:29:03] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 15:37:09] INFO [<module>: run_all.py, 6] ====================== 测试开始 =======================
+[2020-05-13 15:43:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:43:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-13 15:43:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:43:59] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-13 15:43:59] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:43:59] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-13 15:45:58] INFO [<module>: run_all.py, 10] ====================== 测试开始 =======================
+[2020-05-13 15:46:16] INFO [<module>: run_all.py, 10] ====================== 测试开始 =======================
+[2020-05-13 15:46:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:46:16] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-13 15:46:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:46:16] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-13 15:46:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 15:46:16] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-13 15:46:16] INFO [setUpClass: fileupload.py, 18] f63d9f605bd573aae57f68be460e72f43367614ae2aa9f80cdac71a207f5b32fe198b0491ec66e71967e5857e315ce03da241569644c12f7a8472be66d6b15fa
+[2020-05-13 15:46:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:46:16] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-13 15:46:16] INFO [setUpClass: crowd_save.py, 20] f63d9f605bd573aae57f68be460e72f43367614ae2aa9f80cdac71a207f5b32fe198b0491ec66e71967e5857e315ce03da241569644c12f7a8472be66d6b15fa
+[2020-05-13 15:46:16] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:46:17] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 10] 测试用例:crowd_save_normal
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 11] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 12] 请求参数:{"crowdId": "", "name": "测试64", "org": "20005", "business": "1", "bfileId": 1100000265, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 13] 期望结果:请求成功
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 14] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-13 15:46:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:46:17] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 10] 测试用例:crowd_save_repeat
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 11] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 12] 请求参数:{"crowdId": "", "name": "测试59", "org": "20005", "business": "1", "bfileId": 1100000265, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 13] 期望结果:名称重复
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 14] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-13 15:46:17] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-13 15:46:17] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 10] 测试用例:crowd_save_repeat
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 11] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 12] 请求参数:{"crowdId": "", "name": "", "org": "20005", "business": "1", "bfileId": 1100000265, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 13] 期望结果:名称为空
+[2020-05-13 15:46:17] INFO [log_case_info: case_log.py, 14] 实际结果:{"res":0,"resMsg":"名称为空","obj":null}
+[2020-05-13 15:46:18] INFO [send_email: send_email.py, 30] 邮件发送完成！
+[2020-05-13 15:46:18] INFO [<module>: run_all.py, 29] ======================= 测试结束 =======================
+[2020-05-13 17:18:10] INFO [<module>: run_all.py, 10] ====================== 测试开始 =======================
+[2020-05-13 17:18:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 17:18:10] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-13 17:18:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 17:18:10] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-13 17:18:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-13 17:18:10] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
