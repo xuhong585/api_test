@@ -41,9 +41,11 @@ class FileUpload(unittest.TestCase):
         bfileId = res.json()['obj']['bfileId']
         ypath = r'C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\token.yaml'
         print(ypath)
-        t = {"bfileId": 'aaa'}
+        t = {"bfileId": bfileId}
         with open(ypath, 'a', encoding='utf-8') as f:
             yaml.dump(t, f)
+
+        logging.info('bfileId写入成功')
 
 
 if __name__ == '__main__':
