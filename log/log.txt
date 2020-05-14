@@ -786,3 +786,14 @@
 [2020-05-13 17:18:10] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
 [2020-05-13 17:18:10] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
 [2020-05-13 17:18:10] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-14 14:47:54] INFO [<module>: run_all.py, 14] ====================== 测试开始 =======================
+[2020-05-14 14:47:54] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 14:47:54] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-14 14:47:54] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 14:47:54] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-14 14:47:54] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 14:47:54] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-14 14:47:54] INFO [setUpClass: fileupload.py, 20] 9c2907bebc42ca9afc85c07ce4f0c05eb5505b11de613912e02b419933491d0f4a067ab448feb90f736cf0d97fdc6a2817cee27f637e1719cb7cce3e216bf5db
+[2020-05-14 14:47:54] INFO [setUpClass: crowd_save.py, 21] 9c2907bebc42ca9afc85c07ce4f0c05eb5505b11de613912e02b419933491d0f4a067ab448feb90f736cf0d97fdc6a2817cee27f637e1719cb7cce3e216bf5db
+[2020-05-14 14:47:55] INFO [send_email: send_email.py, 32] 邮件发送完成！
+[2020-05-14 14:47:55] INFO [<module>: run_all.py, 31] ======================= 测试结束 =======================
