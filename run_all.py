@@ -1,10 +1,14 @@
 import unittest
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from insight_test.test.fileupload import FileUpload
 from insight_test.test.crowd_save import CrowdSave
 from insight_test.lib.HTMLTestReportCN import HTMLTestRunner
 from insight_test.config.config import *
 from insight_test.lib.send_email import send_email
 from insight_test.lib.login_token import *
+
 
 
 logging.info("====================== 测试开始 =======================")
