@@ -1,6 +1,5 @@
 # _*_ coding:utf-8 _*_
 from insight_test.config.config import *
-from insight_test.lib.MyEncoder import MyEncoder
 import json
 
 

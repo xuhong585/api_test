@@ -1,4 +1,6 @@
 import smtplib # 用于建立smtp连接
+import sys
+sys.path.append('..')
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText # 邮件需要专门的MIME格式
 from insight_test.config.config import *

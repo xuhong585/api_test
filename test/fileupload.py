@@ -2,6 +2,8 @@
 import unittest
 import json
 import requests
+import sys
+sys.path.append('..')
 from insight_test.lib.read_excel import *
 from insight_test.config.config import *
 from insight_test.lib.case_log import log_case_info

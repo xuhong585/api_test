@@ -1,5 +1,7 @@
 # _*_ coding:utf-8 _*_
 import pymysql
+import sys
+sys.path.append('..')
 from insight_test.config.config import *
 
 
