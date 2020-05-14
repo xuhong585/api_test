@@ -21,7 +21,7 @@ class CrowdSave(unittest.TestCase):
         logging.info(cls.token)
         cls.bfileId = get_bfileId()
         print(cls.bfileId)
-        cls.data_list = excel_to_list("/insight_test/data/test_user_data.xlsx", "CrowdSave")
+        cls.data_list = excel_to_list("C:/Users/xuhong/PycharmProjects/untitled/insight_test/data/test_user_data.xlsx", "CrowdSave")
 
     def test_crowd_save_normal(self):
         case_data = get_test_data(self.data_list, 'crowd_save_normal')

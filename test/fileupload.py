@@ -2,8 +2,9 @@
 import unittest
 import json
 import requests
+import os
 import sys
-sys.path.append('..')
+sys.path.append(os.path.abspath(os.path.dirname(__file__)).split('insight_test')[0])
 from insight_test.lib.read_excel import *
 from insight_test.config.config import *
 from insight_test.lib.case_log import log_case_info
@@ -18,7 +19,7 @@ class FileUpload(unittest.TestCase):
         cls.token = get_token()
         print(cls.token)
         logging.info(cls.token)
-        cls.data_list = excel_to_list('/insight_test/data/test_user_data.xlsx', 'FileUpload') # 读取该测试类所有用例数据
+        cls.data_list = excel_to_list('C:/Users/xuhong/PycharmProjects/untitled/insight_test/data/test_user_data.xlsx', 'FileUpload') # 读取该测试类所有用例数据
         # cls.data_list 同 self.data_list 都是该类的公共属性
 
 
