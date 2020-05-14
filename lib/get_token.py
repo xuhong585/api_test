@@ -27,4 +27,4 @@ def get_bfileId(yamlName="token.yaml"):
 
 
 if __name__=='__main__':
-    print(get_token())
+    print(get_bfileId())
