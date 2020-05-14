@@ -1,7 +1,7 @@
 import unittest
 import os
 import sys
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(sys.path[1])
 from insight_test.test.fileupload import FileUpload
 from insight_test.test.crowd_save import CrowdSave
 from insight_test.lib.HTMLTestReportCN import HTMLTestRunner
