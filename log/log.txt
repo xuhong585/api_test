@@ -1027,3 +1027,22 @@
 [2020-05-14 17:12:12] INFO [setUpClass: crowd_save.py, 21] b5dd5618d09d363f7327cfcb5767aceb6d12a27055adeabac04216520b1aa4a2eabc0d8d32cfd870ce780b0f410d6339b3527cb9860042675deb1e343a54638c
 [2020-05-14 17:12:13] INFO [send_email: send_email.py, 32] 邮件发送完成！
 [2020-05-14 17:12:13] INFO [<module>: run_all.py, 31] ======================= 测试结束 =======================
+[2020-05-14 17:14:36] INFO [setUpClass: fileupload.py, 21] 1cf21c298c7ccc67d879d6ead16295622d1530c17ce61ff0800c72bbb5ff40a8643695e1402dd17e56bb97a91b9fd07ee43a3962ef22c1ec6906ae4281cc4e04
+[2020-05-14 17:14:36] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 17:14:36] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 112
+[2020-05-14 17:15:47] INFO [setUpClass: fileupload.py, 21] b5dd5618d09d363f7327cfcb5767aceb6d12a27055adeabac04216520b1aa4a2eabc0d8d32cfd870ce780b0f410d6339b3527cb9860042675deb1e343a54638c
+[2020-05-14 17:15:47] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 17:15:48] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-14 17:16:44] INFO [<module>: run_all.py, 14] ====================== 测试开始 =======================
+[2020-05-14 17:16:44] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 17:16:44] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-14 17:16:44] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 17:16:44] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-14 17:16:44] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 17:16:44] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-14 17:16:44] INFO [setUpClass: fileupload.py, 21] b5dd5618d09d363f7327cfcb5767aceb1609ad874ac0da7daa30410c8debc33203dcba43b96ca5b6b83767e2dfd1a3b18020dd868a33ef95fdb409da495a30db
+[2020-05-14 17:16:44] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 17:16:45] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-14 17:16:45] INFO [setUpClass: crowd_save.py, 21] b5dd5618d09d363f7327cfcb5767aceb1609ad874ac0da7daa30410c8debc33203dcba43b96ca5b6b83767e2dfd1a3b18020dd868a33ef95fdb409da495a30db
+[2020-05-14 17:16:46] INFO [send_email: send_email.py, 32] 邮件发送完成！
+[2020-05-14 17:16:46] INFO [<module>: run_all.py, 31] ======================= 测试结束 =======================
