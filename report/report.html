@@ -123,9 +123,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Api Test</h1>
 <p class='attribute'><strong>测试人员 : </strong> 11</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-05-14 15:17:14</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.029883</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 2，错误 2，通过率= 0.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-05-14 15:48:02</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.646279</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 1，错误 1，通过率= 50.00%</p>
 
 <p class='description'>测试描述</p>
 </div>
@@ -133,9 +133,9 @@ function html_escape(s) {
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -156,35 +156,29 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>unittest.suite._ErrorHolder</td>
-    <td class="text-center">2</td>
+<tr class='passClass warning'>
+    <td>insight_test.test.fileupload.FileUpload</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center">2</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>FileUpload)</div></td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_01</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">  -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in">
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
     <pre>
     
-ft1_1: Traceback (most recent call last):
-  File "C:\Users\xuhong\PycharmProjects\untitled\insight_test\test\fileupload.py", line 21, in setUpClass
-    cls.data_list = excel_to_list('/insight_test/data/test_user_data.xlsx', 'FileUpload') # 读取该测试类所有用例数据
-  File "C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\read_excel.py", line 7, in excel_to_list
-    wb = xlrd.open_workbook(data_file) # 打开excel
-  File "C:\Users\xuhong\PycharmProjects\untitled\venv\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
-    with open(filename, "rb") as f:
-FileNotFoundError: [Errno 2] No such file or directory: '/insight_test/data/test_user_data.xlsx'
+pt1_1: {'res': 1, 'resMsg': '请求成功', 'obj': {'bfileId': 1100000271, 'name': 'sdcc', 'crowdId': None, 'filePath': 'bfile/2020/05/14/158944248025921.txt', 'fileSize': 34, 'fileType': 'txt', 'createdBy': 'xuhong', 'updatedBy': 'xuhong', 'createdAt': 1589442480259, 'updatedAt': 1589442480259}}
+C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\token.yaml
 
 
     </pre>
@@ -192,22 +186,33 @@ FileNotFoundError: [Errno 2] No such file or directory: '/insight_test/data/test
     </td>
 </tr>
 
-<tr id='ft1_2' class='none'>
+<tr class='errorClass warning'>
+    <td>unittest.suite._ErrorHolder</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='ft2_1' class='none'>
     <td class='errorCase'><div class='testcase'>CrowdSave)</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse">  -->
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse in">
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <div id='div_ft2_1' class="collapse in">
     <pre>
     
-ft1_2: Traceback (most recent call last):
-  File "C:\Users\xuhong\PycharmProjects\untitled\insight_test\test\crowd_save.py", line 22, in setUpClass
+ft2_1: {'res': 1, 'resMsg': '请求成功', 'obj': {'bfileId': 1100000271, 'name': 'sdcc', 'crowdId': None, 'filePath': 'bfile/2020/05/14/158944248025921.txt', 'fileSize': 34, 'fileType': 'txt', 'createdBy': 'xuhong', 'updatedBy': 'xuhong', 'createdAt': 1589442480259, 'updatedAt': 1589442480259}}
+C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\token.yaml
+Traceback (most recent call last):
+  File "C:\Users\xuhong\.jenkins\workspace\insight_test\test\crowd_save.py", line 22, in setUpClass
     cls.bfileId = get_bfileId()
-  File "C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\get_token.py", line 22, in get_bfileId
+  File "C:\Users\xuhong\.jenkins\workspace\insight_test\lib\get_token.py", line 22, in get_bfileId
     return t['bfileId']
 KeyError: 'bfileId'
 
@@ -220,10 +225,10 @@ KeyError: 'bfileId'
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>2</td>
+    <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td>2</td>
-    <td>通过率：0.00%</td>
+    <td>1</td>
+    <td>通过率：50.00%</td>
 </tr>
 </table>
 

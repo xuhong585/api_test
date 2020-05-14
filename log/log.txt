@@ -829,3 +829,100 @@
 [2020-05-14 15:28:43] INFO [setUpClass: fileupload.py, 21] d0a19170ba3d4aead4173d2b57965694ed90cd5455e90ced84c0b792623a974313778b36c048ccafcfc9fa0041ef96d7483afda97e290e64eb6dfe7cbb9382fe
 [2020-05-14 15:28:43] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
 [2020-05-14 15:28:44] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-14 15:31:32] INFO [<module>: run_all.py, 14] ====================== 测试开始 =======================
+[2020-05-14 15:31:32] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:31:32] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-14 15:31:32] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:31:32] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-14 15:31:32] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:31:32] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-14 15:31:32] INFO [setUpClass: fileupload.py, 21] 2cc98e0bce5c1fa7386dc0503fd5dfbcb3a2b924ec7f39cd555316bf989d34c2a6fcb893f21d90b9196c5943604aae85f6dc24fcd1e16b516a68a7578123aa76
+[2020-05-14 15:31:32] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:31:33] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-14 15:31:33] INFO [setUpClass: crowd_save.py, 21] 2cc98e0bce5c1fa7386dc0503fd5dfbcb3a2b924ec7f39cd555316bf989d34c2a6fcb893f21d90b9196c5943604aae85f6dc24fcd1e16b516a68a7578123aa76
+[2020-05-14 15:31:33] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:31:33] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 9] 测试用例:crowd_save_normal
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 10] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 11] 请求参数:{"crowdId": "", "name": "测试64", "org": "20005", "business": "1", "bfileId": 1100000268, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 12] 期望结果:请求成功
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 13] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-14 15:31:33] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:31:33] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 9] 测试用例:crowd_save_repeat
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 10] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 11] 请求参数:{"crowdId": "", "name": "测试59", "org": "20005", "business": "1", "bfileId": 1100000268, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 12] 期望结果:名称重复
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 13] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-14 15:31:33] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:31:33] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 9] 测试用例:crowd_save_repeat
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 10] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 11] 请求参数:{"crowdId": "", "name": "", "org": "20005", "business": "1", "bfileId": 1100000268, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 12] 期望结果:名称为空
+[2020-05-14 15:31:33] INFO [log_case_info: case_log.py, 13] 实际结果:{"res":0,"resMsg":"名称为空","obj":null}
+[2020-05-14 15:31:34] INFO [send_email: send_email.py, 32] 邮件发送完成！
+[2020-05-14 15:31:34] INFO [<module>: run_all.py, 31] ======================= 测试结束 =======================
+[2020-05-14 15:38:10] INFO [<module>: run_all.py, 14] ====================== 测试开始 =======================
+[2020-05-14 15:38:10] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:38:10] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-14 15:38:10] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:38:10] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-14 15:38:10] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:38:10] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-14 15:38:10] INFO [setUpClass: fileupload.py, 21] 2cc98e0bce5c1fa7386dc0503fd5dfbc9cc0e3cf0f7f8b47c0a36c6870c3d5dbeef0a24d3d7d021a7cc19eb3d8ce9a7182ba93b9514b8a15db579286982deae2
+[2020-05-14 15:38:10] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:38:11] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-14 15:38:11] INFO [setUpClass: crowd_save.py, 21] 2cc98e0bce5c1fa7386dc0503fd5dfbc9cc0e3cf0f7f8b47c0a36c6870c3d5dbeef0a24d3d7d021a7cc19eb3d8ce9a7182ba93b9514b8a15db579286982deae2
+[2020-05-14 15:38:12] INFO [send_email: send_email.py, 32] 邮件发送完成！
+[2020-05-14 15:38:12] INFO [<module>: run_all.py, 31] ======================= 测试结束 =======================
+[2020-05-14 15:41:57] INFO [<module>: run_all.py, 14] ====================== 测试开始 =======================
+[2020-05-14 15:41:57] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:41:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-14 15:41:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:41:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-14 15:41:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:41:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-14 15:41:58] INFO [setUpClass: fileupload.py, 21] 79ad83e9055c0416bce7c9e145391d1b5be9952cac41ac86136ba329754ed986352b18f1b00a2c3c1d1fae5d9400b142998cc115b122e91800cdedf7a1f9cb25
+[2020-05-14 15:41:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:41:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-14 15:41:58] INFO [setUpClass: crowd_save.py, 21] 79ad83e9055c0416bce7c9e145391d1b5be9952cac41ac86136ba329754ed986352b18f1b00a2c3c1d1fae5d9400b142998cc115b122e91800cdedf7a1f9cb25
+[2020-05-14 15:41:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:41:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 9] 测试用例:crowd_save_normal
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 10] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 11] 请求参数:{"crowdId": "", "name": "测试64", "org": "20005", "business": "1", "bfileId": 1100000270, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 12] 期望结果:请求成功
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 13] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-14 15:41:58] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:41:58] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 9] 测试用例:crowd_save_repeat
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 10] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 11] 请求参数:{"crowdId": "", "name": "测试59", "org": "20005", "business": "1", "bfileId": 1100000270, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 12] 期望结果:名称重复
+[2020-05-14 15:41:58] INFO [log_case_info: case_log.py, 13] 实际结果:{"res":0,"resMsg":"名称重复","obj":null}
+[2020-05-14 15:41:59] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:41:59] DEBUG [_make_request: connectionpool.py, 437] http://172.17.39.19:8030 "POST /system/crowd/save HTTP/1.1" 200 None
+[2020-05-14 15:41:59] INFO [log_case_info: case_log.py, 9] 测试用例:crowd_save_repeat
+[2020-05-14 15:41:59] INFO [log_case_info: case_log.py, 10] url:http://172.17.39.19:8030/system/crowd/save
+[2020-05-14 15:41:59] INFO [log_case_info: case_log.py, 11] 请求参数:{"crowdId": "", "name": "", "org": "20005", "business": "1", "bfileId": 1100000270, "province": "310000", "dataType": "userid", "createdType": "file"}
+[2020-05-14 15:41:59] INFO [log_case_info: case_log.py, 12] 期望结果:名称为空
+[2020-05-14 15:41:59] INFO [log_case_info: case_log.py, 13] 实际结果:{"res":0,"resMsg":"名称为空","obj":null}
+[2020-05-14 15:42:00] INFO [send_email: send_email.py, 32] 邮件发送完成！
+[2020-05-14 15:42:00] INFO [<module>: run_all.py, 31] ======================= 测试结束 =======================
+[2020-05-14 15:43:49] INFO [<module>: run_all.py, 14] ====================== 测试开始 =======================
+[2020-05-14 15:43:49] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:43:49] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 109
+[2020-05-14 15:48:02] INFO [<module>: run_all.py, 14] ====================== 测试开始 =======================
+[2020-05-14 15:48:02] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:48:02] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/login HTTP/1.1" 200 204
+[2020-05-14 15:48:02] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:48:02] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/ipConfigs HTTP/1.1" 200 5382
+[2020-05-14 15:48:02] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.130:8030
+[2020-05-14 15:48:02] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.130:8030 "POST /login/directSmsLogin HTTP/1.1" 200 902
+[2020-05-14 15:48:02] INFO [setUpClass: fileupload.py, 21] 79ad83e9055c0416bce7c9e145391d1b46e113b0d3f6f38d1d572770e8f430d1f37d788cf103448bbfd0e71c1e5880a2f5763af53c9ac72d4e35fe3310af10c1
+[2020-05-14 15:48:02] DEBUG [_new_conn: connectionpool.py, 230] Starting new HTTP connection (1): 172.17.39.19:8030
+[2020-05-14 15:48:03] DEBUG [_make_request: connectionpool.py, 442] http://172.17.39.19:8030 "POST /system/bfile/fileUpload?fileNameType=sdcc.txt&fileSize=34&fileChunk=10485760&chunkIndex=0 HTTP/1.1" 200 None
+[2020-05-14 15:48:03] INFO [setUpClass: crowd_save.py, 21] 79ad83e9055c0416bce7c9e145391d1b46e113b0d3f6f38d1d572770e8f430d1f37d788cf103448bbfd0e71c1e5880a2f5763af53c9ac72d4e35fe3310af10c1
+[2020-05-14 15:48:04] INFO [send_email: send_email.py, 32] 邮件发送完成！
+[2020-05-14 15:48:04] INFO [<module>: run_all.py, 31] ======================= 测试结束 =======================
