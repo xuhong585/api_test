@@ -123,9 +123,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Api Test</h1>
 <p class='attribute'><strong>测试人员 : </strong> 11</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-05-14 17:24:28</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.136472</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 1，错误 1，通过率= 50.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-05-15 10:49:35</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.091728</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 4，通过 3，失败 1，通过率= 75.00%</p>
 
 <p class='description'>测试描述</p>
 </div>
@@ -133,10 +133,10 @@ function html_escape(s) {
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 75.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 3 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 4 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -177,7 +177,7 @@ function html_escape(s) {
     <div id='div_pt1_1' class="collapse in">
     <pre>
     
-pt1_1: {'res': 1, 'resMsg': '请求成功', 'obj': {'bfileId': 1100000279, 'name': 'sdcc', 'crowdId': None, 'filePath': 'bfile/2020/05/14/158944826999334.txt', 'fileSize': 34, 'fileType': 'txt', 'createdBy': 'xuhong', 'updatedBy': 'xuhong', 'createdAt': 1589448269993, 'updatedAt': 1589448269993}}
+pt1_1: {'res': 1, 'resMsg': '请求成功', 'obj': {'bfileId': 1100000283, 'name': 'sdcc', 'crowdId': None, 'filePath': 'bfile/2020/05/15/158951097430733.txt', 'fileSize': 34, 'fileType': 'txt', 'createdBy': 'xuhong', 'updatedBy': 'xuhong', 'createdAt': 1589510974307, 'updatedAt': 1589510974307}}
 C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\token.yaml
 
 
@@ -186,35 +186,72 @@ C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\token.yaml
     </td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>unittest.suite._ErrorHolder</td>
+<tr class='failClass warning'>
+    <td>insight_test.test.crowd_save.CrowdSave</td>
+    <td class="text-center">3</td>
+    <td class="text-center">2</td>
     <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center">1</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',3)" class="detail" id='c2'>详细</a></td>
 </tr>
 
 <tr id='ft2_1' class='none'>
-    <td class='errorCase'><div class='testcase'>CrowdSave)</div></td>
+    <td class='failCase'><div class='testcase'>test_crowd_save_normal</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_1'>失败</button>
     <div id='div_ft2_1' class="collapse">  -->
 
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>错误</button>
+    <button id='btn_ft2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_1'>失败</button>
     <div id='div_ft2_1' class="collapse in">
     <pre>
     
-ft2_1: {'res': 1, 'resMsg': '请求成功', 'obj': {'bfileId': 1100000279, 'name': 'sdcc', 'crowdId': None, 'filePath': 'bfile/2020/05/14/158944826999334.txt', 'fileSize': 34, 'fileType': 'txt', 'createdBy': 'xuhong', 'updatedBy': 'xuhong', 'createdAt': 1589448269993, 'updatedAt': 1589448269993}}
-C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\token.yaml
+ft2_1: {"res":0,"resMsg":"名称重复","obj":null}
 Traceback (most recent call last):
-  File "C:\Users\xuhong\.jenkins\workspace\insight_test\test\crowd_save.py", line 22, in setUpClass
-    cls.bfileId = get_bfileId()
-  File "C:\Users\xuhong\.jenkins\workspace\insight_test\lib\get_token.py", line 22, in get_bfileId
-    return t['bfileId']
-KeyError: 'bfileId'
+  File "C:\Users\xuhong\PycharmProjects\untitled\insight_test\test\crowd_save.py", line 45, in test_crowd_save_normal
+    self.assertIn(res.json()["resMsg"],expect_res)
+AssertionError: '名称重复' not found in '请求成功'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_crowd_save_repeat</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in">
+    <pre>
+    
+pt2_2: {"res":0,"resMsg":"名称重复","obj":null}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_crowd_save_name_empty</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in">
+    <pre>
+    
+pt2_3: {"res":0,"resMsg":"名称为空","obj":null}
 
 
     </pre>
@@ -224,11 +261,11 @@ KeyError: 'bfileId'
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>2</td>
+    <td>4</td>
+    <td>3</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
-    <td>通过率：50.00%</td>
+    <td>通过率：75.00%</td>
 </tr>
 </table>
 

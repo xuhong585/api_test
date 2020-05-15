@@ -39,7 +39,7 @@ class FileUpload(unittest.TestCase):
         print(res.json())
         self.assertIn(res.json()['resMsg'],expect_res)
         bfileId = res.json()['obj']['bfileId']
-        ypath = r'C:\Users\xuhong\PycharmProjects\untitled\insight_test\lib\token.yaml'
+        ypath = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),'lib','token.yaml')
         print(ypath)
         t = {"bfileId": bfileId}
         with open(ypath, 'a', encoding='utf-8') as f:
